@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Support Vector Machines - Why and How"
+date:   2018-11-25 21:55:55 +0200
+math: true
+mathjax: true
+---
+
+Support vector machines (SVMs) are one of the most popular supervised learning algorithms in use today, even with the onslaught of deep learning and neural network take-over. The reason they have remained popular is due to their reliability across a wide variety of problem domains and datasets. They often have great generalisation performance, and this is almost solely due to the clever way in which they work - that is, how they approach the problem of supervised learning and how they formulate the optimisation problem they solve.
+
