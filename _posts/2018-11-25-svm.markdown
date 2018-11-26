@@ -8,3 +8,5 @@ mathjax: true
 
 Support vector machines (SVMs) are one of the most popular supervised learning algorithms in use today, even with the onslaught of deep learning and neural network take-over. The reason they have remained popular is due to their reliability across a wide variety of problem domains and datasets. They often have great generalisation performance, and this is almost solely due to the clever way in which they work - that is, how they approach the problem of supervised learning and how they formulate the optimisation problem they solve.
 
+There are two types of SVMS - hard-margin and soft-margin. Hard-margin SVMs assume the data is linearly-separable (in the raw feature space or some high-dimensional feature space that we can map to) without any errors, whereas a soft-margin has some leeway in that it allows for some misclassification is the data is not completely linearly-separable. When speaking of SVMs, we are generally referring to soft-margin ones, and thus this post will focus on these.
+
