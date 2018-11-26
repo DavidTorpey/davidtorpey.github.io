@@ -18,6 +18,7 @@ To compute the fixed-length representation, consider a particular image $$ I_i $
 
 Other techniques exist to encode local features into global features such as Fisher vectors, and VLAD (vector of locally aggregated descriptors). Fisher vectors are the current state-of-the-art in this domain. However, they can quickly become very high-dimensional, as they are essentially a concatenation of partial derivatives of the parameters of a GMM (Gaussian mixture model) estimated with $$ D $$ modes in the image feature space. They are $$ 2 K D + K $$-dimensional, however, the $$ K $$ term is often discarded as these are the derivates of the GMM with respect to the mixture weights, and have been emprically shown to not provide much value to the representation. Thus, they are typically $$ 2 K D $$-dimensional. VLAD is a representation computed by quantising the residuals of the descriptors with respect to their assigned cluster centroids in a K-Means clustering of the data. They often result in similar performance to Fisher vectors, while being of a lower dimensionality and quicker to compute.
 
+![BoW Flow](assets/BoW.png)
 
 Some great resources for this topic can be found at:
 
