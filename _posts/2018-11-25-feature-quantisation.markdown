@@ -20,6 +20,7 @@ Other techniques exist to encode local features into global features such as Fis
 
 
 Some great resources for this topic can be found at:
+
 [BoW](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/csurka-eccv-04.pdf)
 
 [Fisher vectors](https://www.robots.ox.ac.uk/~vgg/rg/papers/peronnin_etal_ECCV10.pdf)
