@@ -20,6 +20,8 @@ Other techniques exist to encode local features into global features such as Fis
 
 ![BoW Flow](/assets/BoW.png)
 
+A working code example can be found [here](https://github.com/DavidTorpey/blog/blob/master/Image%20Quantisation/Feature%20Quantisation.ipynb).
+
 Some great resources for this topic can be found at:
 
 [BoW](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/csurka-eccv-04.pdf)
