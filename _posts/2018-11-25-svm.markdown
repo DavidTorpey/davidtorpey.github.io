@@ -22,6 +22,7 @@ If we drop the unit norm constraint of parameter $$ \beta $$, we define $$ M := 
 
 $$ 
 \begin{equation}
-x=2
+min \|\beta\| \
+s.t. x = 2
 \end{equation} 
 $$
