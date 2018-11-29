@@ -12,4 +12,4 @@ There are two types of SVMS - hard-margin and soft-margin. Hard-margin SVMs assu
 
 Consider a labeled set of $$ n $$ feature vectors and corresponding targets: $$ \{(x_i, y_i)\}^{n}_{i=1} $$, where $$ x_i \in \mathbb{R}^m $$ is feature vector $$ i $$ and $$ y_i \in \{0, 1\} $$ is target $$ i $$. An SVM attempts to find a hyperplane that separates the classes in the feature space, or some transformed version of the feature space. The hyperplane, however, is defined to be a very specific separating hyperplane - the one that separates the data maximally; that is, with the largest margin between the two classes.
 
-Define a hyperplane $$ \mathcal{H} $$
+Define a hyperplane $$ \mathcal{H} := \{x | f(x) = x^T \beta + beta_0 = 0\} $$.
