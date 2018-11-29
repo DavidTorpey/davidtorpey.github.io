@@ -21,6 +21,6 @@ Thus, it is clear that misclassification occurs when $$ \xi_i > 1 $$. Therefore,
 If we drop the unit norm constraint of parameter $$ \beta $$, we define $$ M := \frac{1}{\|\beta\|} $$, we can then formulate the following convex optimization problem for the SVM: 
 
 $$
-min \|\beta\| \\
-s.t. x = 2
+\text{min} \|\beta\| \\
+\text{s.t. } y_i (x_i^T \beta + \beta_0) \ge 1 - \xi_i, \xi_i \ge 0, \sum_i \xi_i \le K, \forall i
 $$
