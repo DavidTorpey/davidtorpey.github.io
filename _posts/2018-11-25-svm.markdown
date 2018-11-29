@@ -31,6 +31,8 @@ It should be noted that up until now we have been working in the base feature sp
 
 Some great resources for SVMs can be found at the following links:
 
-[Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+[The Elements of Statistical Learning](https://web.stanford.edu/~hastie/Papers/ESLII.pdf)
+
 [Support Vector Networks](http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf)
+
 [Support Vector Machine Soft Margin Classifiers: Error Analysis](http://www.jmlr.org/papers/volume5/chen04b/chen04b.pdf)
