@@ -12,6 +12,8 @@ Okay, enough with the introduction, lets get into it. Autoencoders can be though
   
 Usually when we speak about autoencoders we refer to the under-complete structure, this means that the "code" layer has less neurons than the input layer. The "code" layer, also sometimes referred to as the "latent variables" is the layer we described above. That is, the output layer of the encoder and the input layer of the decoder. Now using a under-complete structure starts to make sense since we are essentially decreasing the dimensionality of our data. As research continued over the past few years, people have become much more interested in what the network learns in the code layer and a lot of research has gone into investigating this.
 
+Generally the decoder is a reflection of the encoder along the code layer. However, in encoder-decoder models we can have various combinations in that we can add LSTM cells in the encoder and not in the decoder or vice-versa.
+
 Since math makes everything easier lets represent the above mathematically as follows, $$ f : \mathbb{R}^m \rightarrow \mathbb{R}^n $$ and $$ g : \mathbb{R}^n \rightarrow \mathbb{R}^m $$, where $$f$$ is the encoder and $$g$$ is the decoder. If we are considering an under-complete structure then $$m>n$$
 
 Autoencoders seek to describe the low-dimensional smooth structure of our high dimensional data, otherwise referred to as high-dimensional surfaces.
@@ -19,3 +21,9 @@ Autoencoders seek to describe the low-dimensional smooth structure of our high d
 There are many variations of autoencoders that have been developed over the past few years, these include; over-complete autoencoders, de-noising autoencoders, variational auroencoders, etc. The basic idea for all these models are the same as the normal autoencoder.
 
 Applications of these models can vary from dimensionality reduction to information retrieval. 
+
+Some great resources can be found at:
+
+[Autoencoders - tutorial](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)
+
+[Understanding Autoencoders](https://becominghuman.ai/understanding-autoencoders-unsupervised-learning-technique-82fb3fbaec2)
