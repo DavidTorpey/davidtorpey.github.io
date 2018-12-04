@@ -6,7 +6,7 @@ math: true
 mathjax: true
 ---
 
-Autoencoders fall under the unsupervised category and are a special case of neural networks that map their inputs to their outputs. This can be seen mathematically as $$ f : \mathbb{R}^m \rightarrow \mathbb{R}^m $$. Autoencoders were originally introduced to address dimensionality reduction. In the original paper, Hinton compares it with PCA, another dimensionality reduction algorithm. He showed that autoencoders outperform PCA when non-linear mappings are needed to represent the data.
+Autoencoders fall under the unsupervised learning category, and are a special case of neural networks that map the inputs (in the input layer) back to the inputs (in the final layer). This can be seen mathematically as $$ f : \mathbb{R}^m \mapsto \mathbb{R}^m $$. Autoencoders were originally introduced to address dimensionality reduction. In the original paper, Hinton compares it with PCA, another dimensionality reduction algorithm. He showed that autoencoders outperform PCA when non-linear mappings are needed to represent the data. They are able to learn a more realistic low-dimensional manifold than linear methods due to their non-linear nature.
 
 Okay, enough with the introduction; let's get into it. Autoencoders can be thought of as having two networks in one grand network. We refer to the first network as the encoder network. This takes in the actual data as the input and runs to the network to the output, similar to a vanilla neural network. The second network is the decoder network. This takes the output of the encoder as inputs to the network and uses the original input data as targets.
   
