@@ -31,4 +31,4 @@ This page is meant to give you a quickstart guide to some of the research papers
 
 ## [Reducing the dimensionality of data using neural networks](https://www.cs.toronto.edu/~hinton/science.pdf)
 
-## [Learnability and the Vapbik-Chervonenkis Dimension](http://www2.denizyuret.com/ref/blumer/ft_gateway.cfm.pdf)
+## [Learnability and the Vapnik-Chervonenkis Dimension](http://www2.denizyuret.com/ref/blumer/ft_gateway.cfm.pdf)
