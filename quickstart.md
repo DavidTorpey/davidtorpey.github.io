@@ -21,4 +21,14 @@ This page is meant to give you a quickstart guide to some of the research papers
 
 ## [ImageNet Classification with Deep Convolutional Neural Networks](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks)
 
+## [Deep Residual Learning for Image Recognition](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
+## [Improving the Fisher Kernel for Large-Scale Image Classification](https://www.robots.ox.ac.uk/~vgg/rg/papers/peronnin_etal_ECCV10.pdf)
+
+## [Support Vector Networks](http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf)
+
+## [Random Forests](https://www.stat.berkeley.edu/~breiman/randomforest2001.pdf)
+
+## [Reducing the dimensionality of data using neural networks](https://www.cs.toronto.edu/~hinton/science.pdf)
+
+## [Learnability and the Vapnik-Chervonenkis Dimension](http://www2.denizyuret.com/ref/blumer/ft_gateway.cfm.pdf)

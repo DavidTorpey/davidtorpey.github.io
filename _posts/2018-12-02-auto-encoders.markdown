@@ -24,6 +24,8 @@ Applications of these models can vary from dimensionality reduction to informati
 
 Some great resources can be found at:
 
-[Autoencoders - tutorial](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)
+[Reducing the dimensionality of data with neural networks](https://www.cs.toronto.edu/~hinton/science.pdf)
+
+[Autoencoders - Tutorial](http://ufldl.stanford.edu/tutorial/unsupervised/Autoencoders/)
 
 [Understanding Autoencoders](https://becominghuman.ai/understanding-autoencoders-unsupervised-learning-technique-82fb3fbaec2)
