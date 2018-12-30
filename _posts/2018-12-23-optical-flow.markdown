@@ -21,3 +21,7 @@ The first optical flow algorithm that will be discussed is perhaps the most well
 Since the system is underconstrainted, KLT considers local optical flow - a $$ 2k+1 \times 2k+1 $$ window. This yields a system of equations $$ A u = f_t $$. Using the pseudo-inverse of $$ A $$, we can obtain a solution: 
 
 $$ u = (A^T A)^{-1} A^T f_t $$.
+
+There are other optical flow algorithm that perform dense optical flow - optical flow for  dense interest points. Lucas-Kanade works well for sparse interest points, but it too computationally-intensive for dense optical flow. Dense interest points are most often sampled using a technique known as dense sampling - sampling points on a regular grid on the image. This can even be every pixel.
+
+One such algorithm is Farneback's method, and computes the flow for dense interest points. For example, if every pixel is tracked from one frame to another in a video, the result would be the per-pixel horizontal and vertical flow of that pixel. These flows essentially result in a two-channel image of the same size as the input frames, where the channels are optical flow vector fields representing the horizontal and vertical flow, respectively.
