@@ -27,7 +27,7 @@ If these map points correctly model the similarities of the datapoints, we shoul
 
 t-SNE addresses these issues of SNE by using a symmetric cost function with simpler gradients, and uses a student t-distribution to calculate the similarities in the low-dimensional space instead of a Gaussian. This heavy-tailed distribution in the low-dimensional space alleviates the crowding and optimization problems. The KL-divergence-based cost function can be easily optimized using a variant of gradient descent with momentum.
 
-t-SNE is able to learn good, realistic manifolds as it is able to effectively capture the non-linear relationships and interactions in data, if they are present. t-SNE in its original form computes, specifically, a 2-dimensional projection / map. We can see a comparison of t-SNE and PCA in the below image. It is clear that PCA is inherently limited, since the projection into the principal subspace is linear. It is clear that t-SNE has much more effectively captured the structure of the data, and allowed for a much niver, clearer visualization.
+t-SNE is able to learn good, realistic manifolds as it is able to effectively capture the non-linear relationships and interactions in data, if they are present. t-SNE in its original form computes, specifically, a 2-dimensional projection / map. We can see a comparison of t-SNE and PCA in the below image. It is clear that PCA is inherently limited, since the projection into the principal subspace is linear. It is clear that t-SNE has much more effectively captured the structure of the data, and allowed for a much nicer, clearer visualization.
 
 ![PCA vs t-SNE](/assets/pcavstsne.png)
 
