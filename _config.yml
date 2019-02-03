@@ -16,11 +16,11 @@
 title: David Torpey
 email: torpey.david93@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-   Stuff that interests me, and hopefully you too. Hopefully we learn
-   something along the way as well.
+  Stuff that interests me, and hopefully you too. Hopefully we learn
+  something along the way as well.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://davidtorpey.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  DavidTorpey
+url: "https://davidtorpey.com/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: DavidTorpey
 google_analytics: UA-129782141-1
 
 # Build settings
@@ -28,7 +28,7 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
