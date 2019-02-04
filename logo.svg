@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="345px" height="345px" viewBox="0 0 345 345" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>DT_Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="172.5" cy="172.5" r="172.5"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DT_Logo">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <circle stroke="#000000" stroke-width="12" cx="172.5" cy="172.5" r="166.5"></circle>
+            <path d="M327.168739,135.5 L343.274306,135.5" id="T-to-C" stroke="#F8F9FA" stroke-width="11" mask="url(#mask-2)"></path>
+            <path d="M1,195.5 L16.4756418,195.5" id="D-to-C" stroke="#F8F9FA" stroke-width="11" mask="url(#mask-2)"></path>
+            <g id="In" mask="url(#mask-2)" stroke="#2045D7" stroke-width="12">
+                <g transform="translate(-1.000000, 147.000000)">
+                    <path d="M0,60 L141,60 C157.568542,60 171,46.5685425 171,30 C171,13.4314575 157.568542,0 141,0 L106,0 L106,43" id="D"></path>
+                    <polyline id="T" points="181 0 216 0 216 65 216 0 349 0"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
