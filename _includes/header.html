@@ -13,12 +13,15 @@
       page.excerpt | strip_html | strip_newlines | truncate: 160
     }}{% else %}{{ site.description }}{% endif %}"
   />
+  <meta name="author" content="David Torpey" />
   <meta property="og:site_name" content="{{ site.title }}" />
   {% if page.title %}
+  <title>{{ page.title }} | {{ site.title | escape }}</title>
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="{{ page.excerpt | strip_html }}" />
   {% else %}
+  <title>{{ site.title | escape }}</title>
   <meta property="og:title" content="{{ site.title }}" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="{{ site.description }}" />
