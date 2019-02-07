@@ -4,6 +4,7 @@ title:  "Local Feature Encoding and Quantisation"
 date:   2018-11-25 21:55:55 +0200
 math: true
 mathjax: true
+tags: [fisher vector, vlad, feature vectors, feature encoding]
 ---
 
 In this post, I will describe local feature encoding and quantisation - why it is useful, where it is used, and some of the popular techniques used to perform it.
