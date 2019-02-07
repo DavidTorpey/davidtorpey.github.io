@@ -4,6 +4,7 @@ title:  "Autoencoders"
 date:   2018-12-02 21:55:55 +0200
 math: true
 mathjax: true
+tags: [autoencoder, auto-encoders, neural networks, deep learning, dimensionality reduction]
 ---
 
 Autoencoders fall under the unsupervised learning category, and are a special case of neural networks that map the inputs (in the input layer) back to the inputs (in the final layer). This can be seen mathematically as $$ f : \mathbb{R}^m \mapsto \mathbb{R}^m $$. Autoencoders were originally introduced to address dimensionality reduction. In the original paper, Hinton compares it with PCA, another dimensionality reduction algorithm. He showed that autoencoders outperform PCA when non-linear mappings are needed to represent the data. They are able to learn a more realistic low-dimensional manifold than linear methods due to their non-linear nature.
