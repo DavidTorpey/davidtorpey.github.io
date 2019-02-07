@@ -4,6 +4,7 @@ title:  "Dimensionality Reduction"
 date:   2019-01-31 21:55:55 +0200
 math: true
 mathjax: true
+tags: [dimensionality reduction, pca, t-SNE, machine learning, manifold learning]
 ---
 
 
