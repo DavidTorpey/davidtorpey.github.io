@@ -39,7 +39,9 @@
   <meta property="article:tag" content="{{ tag }}" />
   {% endfor %} {% endif %} {% if author %}
   <meta property="article:author" content="{{ author.name }}" />
-  {% endif %} {% if page.math != false %} {% include mathjax.html %} {% endif %}
+
+  {% endif %} {% include google-analytics.html %} {% if page.math != false %} {%
+  include mathjax.html %} {% endif %}
 
   <link rel="stylesheet" href="/css/main.css" />
 </head>
