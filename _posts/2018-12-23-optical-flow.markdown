@@ -4,6 +4,7 @@ title:  "Optical Flow"
 date:   2018-12-23 16:23:55 +0200
 math: true
 mathjax: true
+tags: [optical flow, lucas kanade, dense optical flow, computer vision]
 ---
 
 Optical flow is a method for motion analysis and image registration that aims to compute displacement of intensity patterns. Optical flow is used in many different settings in the computer vision realm, such as video recognition and video compression. The key assumption to many optical flow algorithms is known as the brightness constancy constraint, as is defined as:
