@@ -4,6 +4,7 @@ title:  "Ensemble Learning"
 date:   2018-12-10 21:55:55 +0200
 math: true
 mathjax: true
+tags: [ensemble learning, boosting, bagging, machine learning]
 ---
 
 Ensemble learning is one of the most useful methods in the machine learning, not least for the fact that it is essentially agnostic to the statistical learning algorithm being used. Ensemble learning techniques are a set of algorithms that define how to combine multiple classifiers to make one strong classifier. There are various ensemble learning techniques, but this post will focus on the two most popular - bagging and boosting. These two approach the same problem in very different ways.
