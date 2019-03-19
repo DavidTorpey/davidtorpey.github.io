@@ -32,5 +32,7 @@ Another consideration to consider (using deep learning approaches particularly) 
 
 Some good resources and references can be found here:
 [I3D](https://arxiv.org/pdf/1705.07750.pdf)
+
 [Temporal Segment Networks](https://wanglimin.github.io/papers/WangXWQLTV_ECCV16.pdf)
+
 [PoTion](https://hal.inria.fr/hal-01764222/document)
