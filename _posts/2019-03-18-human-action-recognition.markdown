@@ -31,6 +31,7 @@ It is important to note that when using deep learning to solve action recognitio
 Another consideration to consider (using deep learning approaches particularly) is the temporal resolution of the samples used during training. The durations of actions vary hugely, and in order to make the system robust, the model needs to accommodate for this. Some approaches employ careful sampling of various snippets along the temporal evolution of the video so that the samples cover the action fully. Others employ a large temporal resolution for the sample - 60-100 frames. However, this increases computational cost significantly. 
 
 Some good resources and references can be found here:
+
 [I3D](https://arxiv.org/pdf/1705.07750.pdf)
 
 [Temporal Segment Networks](https://wanglimin.github.io/papers/WangXWQLTV_ECCV16.pdf)
