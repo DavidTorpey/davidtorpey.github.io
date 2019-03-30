@@ -4,7 +4,7 @@ title:  "SVMs: A Geometric Interpretation"
 date:   2019-03-30 21:55:55 +0200
 math: true
 mathjax: true
-tags: [support vector machine, svm]
+tags: [support vector machine, svm, machine learning]
 ---
 
 ![Example Points](/assets/base.png)
