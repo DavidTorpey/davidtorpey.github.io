@@ -9,7 +9,7 @@ tags: [support vector machine, svm, machine learning]
 
 ![Example Points](/assets/base.png)
 
-Consider a set of positive and negative samples from some dataset. How can we approach the problem of classifying these - and more importantly, unseen - samples as either positive or negative examples? The most intuitive way to do this is to draw a line / hyperplane between the between the positive and negative samples.
+Consider a set of positive and negative samples from some dataset as shown above. How can we approach the problem of classifying these - and more importantly, unseen - samples as either positive or negative examples? The most intuitive way to do this is to draw a line / hyperplane between the between the positive and negative samples.
 
 However, which line should we draw? We could draw this one:
 
@@ -23,19 +23,19 @@ However, neither of the above seem like the best fit. Perhaps a line such that t
 
 ![SVM line](/assets/svmline.png)
 
-This line is such that the margin is maximized. However, we need to construct a decision rule to classify examples. To do this, consider a vector $$\mathbf{w}$$ perpendicular to the margin. Further, consider some unknown vector $$ \mathbf{u} $$ representing some example we want to classify.
+This line is such that the margin is maximized. This is the line an SVM attempts to find - an SVM attempts to find the **maximum-margin separating hyperplane** between the two classes. However, we need to construct a decision rule to classify examples. To do this, consider a vector $$\mathbf{w}$$ perpendicular to the margin. Further, consider some unknown vector $$ \mathbf{u} $$ representing some example we want to classify:
 
 ![Wrong line 1](/assets/wandu.png)
 
-We want to know what side of the decision boundary $$ \mathbf{u} $$ in order to classify it. To do this, we project it onto $$ \mathbf{w} $$ by computing $$ \mathbf{w} \cdot \mathbf{u} $$. This will give us a value that is proportional to the distance $$ \mathbf{u} $$ is, *in the direction of* $$ \mathbf{w} $$. We can then use this to determine which side of the boundary $$ \mathbf{u} $$ lies on using the following decision rule:
+We want to know what side of the decision boundary $$ \mathbf{u} $$ is in order to classify it. To do this, we project it onto $$ \mathbf{w} $$ by computing $$ \mathbf{w} \cdot \mathbf{u} $$. This will give us a value that is proportional to the distance $$ \mathbf{u} $$ is, *in the direction of* $$ \mathbf{w} $$. We can then use this to determine which side of the boundary $$ \mathbf{u} $$ lies on using the following decision rule:
 
 $$ \mathbf{w} \cdot \mathbf{u} \ge c $$
 
 for some $$ c \in \mathbb{R} $$. $$c$$ is basically telling us that if we are far *enough* away, we can classify $$ \mathbf{u} $$ as a positive example. We can rewrite the above decision rule as follows:
 
-%$$ \mathbf{w} \cdot \mathbf{u} + b \ge 0 $$
+$$ \mathbf{w} \cdot \mathbf{u} + b \ge 0 $$
 
-where $$ b = -c $$.
+where $$ b = -c $$. 
 
 But, what $$ \mathbf{w} $$ and $$ b $$ should we choose? We don't have enough constraint in the problem to fix a particular $$ \mathbf{w} $$ or $$ b $$. Therefore, we introduce additional constraints:
 
@@ -45,7 +45,8 @@ and
 
 $$ \mathbf{w} \cdot \mathbf{x}_- + b \le -1 $$
 
-These constraints basically forces the function that defines our decision rule to produce a value of 1 or greater for positive examples, and -1 or less for negative examples.
+These constraints basically force the function that defines our decision rule to produce a value of 1 or greater for positive examples, and -1 or less for negative examples.
+
 Now, instead of dealing with two inequalities, we introduce a new variable, $$ y_i $$, for mathematical convenience. It is defined as:
 
 $$
@@ -71,9 +72,9 @@ However, we go a step further by making the above inequality even more stringent
 
 $$ y_i (\mathbf{w} \cdot \mathbf{x}_i + b) - 1 = 0 $$
 
-The above equation constrains examples lying on the margins (known as *support vectors*) to be exactly 0. We do this because if a training point lies exactly on the margin, we don't want to classify it as either positive or negative, since it's exactly in the middle. We instead want such points to define our decision boundary.
+The above equation constrains examples lying on the margins (known as *support vectors*) to be exactly 0. We do this because if a training point lies exactly on the margin, we don't want to classify it as either positive or negative, since it's exactly in the middle. We instead want such points to define our decision boundary. It is also clearly the equation of a hyperplane, which is what we want!
 
-Keep in mind that our goal is to find the margin separating positive and negative examples to be as large as possible.
+Keep in mind that our goal is to find the margin separating positive and negative examples to be as large as possible. This means that we will need to know the width of our margin so that we can maximize it. The following picture shows how we can calculate this width.
 
 ![Margin Width](/assets/width.png)
 
@@ -93,7 +94,7 @@ Thus, substituting into the expression for the width yields:
 
 $$ \text{width} = \frac{2}{||\mathbf{w}||} $$
 
-Since we want to maximize the margin, we want:
+which is interesting! The width of our margin for such a problem depends only on $$ \mathbf{w} $$. Since we want to maximize the margin, we want:
 
 $$ \text{max} \frac{2}{||\mathbf{w}||} $$
 
