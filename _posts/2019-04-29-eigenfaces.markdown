@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Face Recognition: Eigenfaces"
-date:   2019-04-29 21:55:55 +0200
+date:   2018-11-25 21:55:55 +0200
 math: true
 mathjax: true
 tags: [face recognition, eigenfaces, pca]
