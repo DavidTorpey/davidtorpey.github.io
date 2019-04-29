@@ -53,6 +53,6 @@ $$ \hat{\Phi} = U^T \Phi $$
 
 Given this projected face, we can find which face it is closest to in the eigenface subspace, and classify it as that that person's face:
 
-$$ \text{prediction} = \argmin_{i} ||\Omega_i - \hat{\Phi}||_2 $$
+$$ \text{prediction} = \text{argmin}_{i} ||\Omega_i - \hat{\Phi}||_2 $$
 
 where $$ \Omega_i $$ is the $$ i^{\text{th}} $$ face in the eigenface subspace. It is clear that this is using Euclidean distance, as this is the metric used in the classical eigenface algorithm. We can, however, instead opt for $$ L_1 $$ distance or any other distance metric.
