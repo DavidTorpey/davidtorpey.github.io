@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "The Genius that is JPEG"
+date:   2019-07-12 21:55:55 +0200
+math: true
+mathjax: true
+tags: [jpeg, image compression]
+---
+
+When dealing with images, certainly within the context of computer vision or machine learning, the vast majority are either JPEG or PNG images. However, in the interest of correctness, let us clarify some things about JPEG.
+
+There are no such things as JPEG files. Instead, JPEG (Joint Photographic Experts Group) is a compression standard / algorithm. JFIF - JPEG File Interchange Format - is the actual file format that describes how to structure the compressed image data. However, this is just one such specification; others exist such as TIFF and EXIF as well. JFIF is therefore a small subset of the full JPEG standard.
+
+In this post, we will simply be describing the JPEG compression algorithm, not any of the file format specifications that describe how to structure the compressed data for storage or transmission. JPEG relies on the observation that: 1. we do not perceive colour /chrominance as well as we do intensity; and 2. we do not perceive high frequency data as well as low frequency data.
+
+1. Convert colourspace to image to YCbCr. In this way, we are attempting to separate the luminosity / intensity from the chrominance / colour.
+
+2. Downsample (reduce amount of colour)
+
+3. DCT
+
+4. Quantisation - lossy part
+
+5. Encoding
+
+
+Downsample Cb and Cr single we cannot perceive difference (get rid of colour information). Save space. Typically by a factor of 2 in both directions.
+
