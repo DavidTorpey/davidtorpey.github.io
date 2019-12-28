@@ -8,7 +8,11 @@ Here is some of the formal research I have done or been part of **academically**
 
 ## Masters of Science
 
-My MSc. Computer Science research involved finding a novel algorithm to human action recognition. Earlier in the degree, I conducted research into steganography; machine learning on homomorphically-encrypted data; and image compression using autoencoders and JPEG2000.
+My MSc. Computer Science research involved finding a novel algorithm to human action recognition. This included desiging a pipeline involving novel preprocessing techniques, 3D CNNs, optical flow correction, and linear SVMs. Earlier in the degree, I conducted research into steganography; machine learning on homomorphically-encrypted data; and image compression using autoencoders and JPEG2000.
+
+## Image Compression using Autoencoders
+
+The goal of this research project was to perform compression of hyperspectral imagery using autoencoders and JPEG2000 (an improved variant of the JPEG image compression standard). The joint latent space of the autoencoder (i.e. for all channels of the image) was fed into JPEG2000 for compression. The compression was more effective since the AE could efficiently decorrelate the channels. The JPEG2000 bit stream was used as the compressed representation. 
 
 ## Automated Parking Detection
 
