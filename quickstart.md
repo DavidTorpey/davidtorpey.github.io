@@ -6,6 +6,8 @@ permalink: /quickstart/
 
 <p>
 This page is meant to give you a quickstart guide to some of the research papers and resources I find most helpful when learning different concepts, ideas, algorithms, and techniques in machine learning and computer vision. I highly recommend reading them if you are doing research in those fields, or just out of morbid curiosity!
+
+The list mostly focuses on groundbreaking, foundational papers in machine learning, deep learning, and computer vision. They will provide you with great context to build upon, and progress in the field, and possibly come up with your own novel ideas!
 </p>
 
 ### [Robust Real-time Object Detection](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-IJCV-01.pdf)
@@ -33,3 +35,13 @@ This page is meant to give you a quickstart guide to some of the research papers
 ### [Reducing the dimensionality of data using neural networks](https://www.cs.toronto.edu/~hinton/science.pdf)
 
 ### [Learnability and the Vapnik-Chervonenkis Dimension](http://www2.denizyuret.com/ref/blumer/ft_gateway.cfm.pdf)
+
+### [Generative Adversarial Networks](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)
+
+### [Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)
+
+### [Dynamic Routing Between Capsules](https://arxiv.org/pdf/1710.09829.pdf)
+
+### [Long Short-Term Memory](https://www.bioinf.jku.at/publications/older/2604.pdf)
+
+### [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
