@@ -16,3 +16,9 @@ A [variational autoencoder](https://arxiv.org/abs/1312.6114) (VAE) is a neural n
 
 Typically, $$ p $$ is chosen to be standard Normal, and $$ q $$ is chosen to be a multivariate Gaussian. Once trained, samples similar to those it was trained on can be generate using the learned distribution. However, for the purposes of this post, we focuses on the VAE's ability to learn the parameters of some distribution, whose functional form we choose a-priori.
 
+
+Some great resources for this post can be found below:
+
+[Fisher vectors](https://lear.inrialpes.fr/pubs/2010/PSM10/PSM10_0766.pdf)
+[VAE](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)
+[VAE](http://anotherdatum.com/vae.html)
