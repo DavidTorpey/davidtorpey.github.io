@@ -20,6 +20,8 @@ The original SIFT paper by Lowe. Of all the interest point detection and descrip
 
 ### [Face Recognition Using Eigenfaces](https://www.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
 
+A foundational face recognition algorithm, hailed for its combination of simplicity and accuracy. The key idea was the ability to model faces using a low-dimensional linear subspace computed using PCA. Only a few principal components are needed to encode much of the structure and salient information of the face (indeed, only in highly controlled settings). This paper inspired much subsequent work in classical vision approaches to face recognition. The basic framework is also generic enough to be applicable to other problems. 
+
 ### [An Iterative Image Registration Technique with an Application to Stereo Vision](https://pdfs.semanticscholar.org/51fe/a461cf3724123c888cb9184474e176c12e61.pdf)
 
 ### [Normalized cuts and image segmentation](https://ieeexplore.ieee.org/document/868688/)
