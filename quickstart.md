@@ -12,7 +12,11 @@ The list mostly focuses on groundbreaking, foundational papers in machine learni
 
 ### [Robust Real-time Object Detection](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/viola-IJCV-01.pdf)
 
+A ground-breaking object detection algorithm based on boosting of many Haar-based feature detectors. The framework is generic, and the Haar features can be swapped out for features such as histogram of oriented gradients, or local binary patterns. The classical vision / non-deep learning approach to object detection was the previous state-of-the-art, and was widely used in cell phones and cameras for face detection.
+
 ### [Distinctive Image Features from Scale-Invariant Keypoints](https://people.eecs.berkeley.edu/~malik/cs294/lowe-ijcv04.pdf)
+
+The original SIFT paper by Lowe. Of all the interest point detection and description mechanisms, SIFT was the most popular, and certainly the state-of-the-art approach for many years (lately has arguably been overtaken by KAZE and LIFT). It has seen many applications including image stitching, image classification, and image search. It is one of the seminal classical computer vision algorithms. 
 
 ### [Face Recognition Using Eigenfaces](https://www.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf)
 
