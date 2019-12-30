@@ -24,6 +24,8 @@ A foundational face recognition algorithm, hailed for its combination of simplic
 
 ### [An Iterative Image Registration Technique with an Application to Stereo Vision](https://pdfs.semanticscholar.org/51fe/a461cf3724123c888cb9184474e176c12e61.pdf)
 
+The most popular image registration / optical flow algorithm known as Lucas-Kanade. This algorithm has seen many applications in many different areas, including video analysis, video compression, and action recognition. It is a least squares estimate to predict the flow  of pixels, derived (as most optical flow is) from the brightness constancy constraint.
+
 ### [Normalized cuts and image segmentation](https://ieeexplore.ieee.org/document/868688/)
 
 ### [Visual Categorization with Bags of Keypoints](https://www.cs.cmu.edu/~efros/courses/LBMV07/Papers/csurka-eccv-04.pdf)
