@@ -6,6 +6,14 @@ permalink: /research/
 
 Here is some of the formal research I have done or been part of **academically** (not in industry):
 
+## SummaryNet: A Multi-Stage Deep Learning Model for Automatic Video Summarisation
+
+The arXiv pre-print is available [here](https://arxiv.org/pdf/2002.09424.pdf).
+
+## Human Action Recognition using Local Two-Stream Convolutional Neural Network Features and Support Vector Machines
+
+The arXiv pre-print is available [here](https://arxiv.org/pdf/2002.09423.pdf). 
+
 ## Masters of Science
 
 My MSc. Computer Science research involved finding a novel algorithm to human action recognition. This included desiging a pipeline involving novel preprocessing techniques, 3D CNNs, optical flow correction, and linear SVMs. Earlier in the degree, I conducted research into steganography; machine learning on homomorphically-encrypted data; and image compression using autoencoders and JPEG2000.
