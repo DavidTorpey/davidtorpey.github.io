@@ -4,6 +4,8 @@ title: Research
 permalink: /research/
 ---
 
+[Google Scholar Profile](https://scholar.google.com/citations?user=4pN26AoAAAAJ&hl=en)
+
 Here is some of the formal research I have done or been part of **academically** (not in industry):
 
 ## SummaryNet: A Multi-Stage Deep Learning Model for Automatic Video Summarisation
