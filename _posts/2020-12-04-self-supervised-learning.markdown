@@ -20,3 +20,5 @@ A very naive approach (that I strongly recommend against using) is the following
 This naive algorithm is highly inefficient since all possible faces will need to be checked. This involves checking $$ n \choose d $$ possible faces. In order words, the computational complexity of this algorithm is $$ \Theta({n \choose d}) $$.
 
 A much more efficient algorithm for computing a convex hull is the quickhull algorithm. It is a popular algorithm for the general dimension case, and is indeed the implementation in the scipy package (which leverages the qhull library).
+
+A key operation used in the quickhull algorithm is *signed distance from a point to a hyperplane*.
