@@ -23,6 +23,6 @@ A much more efficient algorithm for computing a convex hull is the quickhull alg
 
 A key operation used in the quickhull algorithm is *signed distance from a point to a hyperplane*. We need it to be signed, since we want to know which side of the hyperplane /face the point lies. Formally, we can compute this signed distance for a point $$ \mathbf{x} $$ using the following:
 
-$$ \frac{\langle \mathbf{x}, \mathbf{n} \rangle - \lange \mathbf{p}, \mathbf{n} \rangle}{||\mathbf{n}||_2} $$
+$$ \frac{\langle \mathbf{x}, \mathbf{n} \rangle - \langle \mathbf{p}, \mathbf{n} \rangle}{||\mathbf{n}||_2} $$
 
 where $$ \mathbf{p} $$ is a point that lies on the hyperplane, and $$ \mathbf{n} $$ is the hyperplanes normal vector.
