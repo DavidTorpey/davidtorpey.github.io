@@ -1,6 +1,8 @@
 ---
-name: Jane Doe
-position: Developer
+layout: default
+title: FixMatch
+math: true
+mathjax: true
 ---
 
-Jane has worked on Jekyll for the past *five years*.
+This is about FixMatch...

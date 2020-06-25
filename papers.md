@@ -4,4 +4,4 @@ title: Papers
 permalink: /papers/
 ---
 
-[link]({% link _papers/fixmatch.md %})
+[FixMatch]({% link _papers/fixmatch.md %})
