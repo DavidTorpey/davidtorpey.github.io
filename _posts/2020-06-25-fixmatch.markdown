@@ -1,9 +1,14 @@
 ---
 layout: post
 title:  "FixMatch: Simplifying Semi-Supervised Learning with Consistency and Confidence"
-date:   2020-06-24 21:55:55 +0200
+date:   2020-06-25 21:55:55 +0200
 math: true
 mathjax: true
 tags: [semi-supervised learning, computer vision, deep learning]
 ---
 
+Labelled data is often either expensive or hard to obtain. As such, there has been a plethora of work to make better use of unlabelled data in machine learning, with paradigms such as unsupervised learning, semi-supervised learning, and more recently, self-supervised learning. FixMatch is an approach to semi-supervised learning (SSL) that combines two common approaches of SSL: 1. consistency regularisation and pseudo-labelling.
+
+## Consistency Regularisation
+
+Consistency regularisation is an approach that utilises unlabelled data, and its core assumption is: *the model should output similar predictions when fed perturbed versions of the same input sample*. Formally, what this means is that given a model $$ f $$ and input sample $$ x $$, $$ f(x) = f(a(x)) $$ for some perturbation function $$ a $$.
