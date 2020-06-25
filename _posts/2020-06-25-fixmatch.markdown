@@ -11,4 +11,26 @@ Labelled data is often either expensive or hard to obtain. As such, there has be
 
 ## Consistency Regularisation
 
-Consistency regularisation is an approach that utilises unlabelled data, and its core assumption is: *the model should output similar predictions when fed perturbed versions of the same input sample*. Formally, what this means is that given a model $$ f $$ and input sample $$ x $$, $$ f(x) = f(a(x)) $$ for some perturbation function $$ a $$.
+Consistency regularisation is an approach that utilises unlabelled data, and its core assumption is: *the model should output similar predictions when fed perturbed versions of the same input sample*. Formally, what this means is that given a model $$ f $$ and input sample $$ x $$, $$ f(x) = f(a(x)) $$ for some perturbation function $$ a $$. For example, for a given image, the model should return the same prediction for any perturbed version of that image (e.g. colour jittering, or affine transform).
+
+The vanilla loss term when enforcing consistency is given by:
+
+$$ \sum_i ||p(y_i | \alpha(u_i)) - p(y_i | \alpha(u_i))||_2^2 $$
+
+where $$ p $$ is the model, $$ u_i $$ is an unlabelled example, and $$ \alpha $$ is a stochastic perturbation function. The $$ L_2 $$-norm can be swapped out for other norms or metrics, but the key idea is that perturbed versions of the same input should produce similar predictions.
+
+## Pseudo-Labelling
+
+The idea behind pseudo-labeling is to use the model itself to produce artificial labels for unlabelled data. Such pseudo-labels are usually made to be hard labels (i.e. argmax of the model's predicted class distribution), since this encourages the model to be confident in its predictions.
+
+The vanilla loss term when employing pseudo-labelling is given by:
+
+$$ \sum_i 1\{\max(q_i) \ge \tau\} H(\hat{q}_i, q_i) $$
+
+## The Model
+
+![fixmatch1](/assets/fixmatch1.png)
+
+Consistency regularisation is enforced through the use of two data augmentation strategies. The first is weak augmentation, which is a simple flip-and-shift strategy whereby images are randomly flipped horizontally with probability $$ 0.5 $$, and randomly translated up to $$ 12.5 $$% horizontally and vertically. The second is strong augmentation, which is implemented using either [RandAugment](https://arxiv.org/abs/1909.13719) or [CTAugment](https://arxiv.org/pdf/1911.09785.pdf). Both of these strong augmentation strategies employ a stronger form of distortion on to the source images, such as colour distortion and other affine transformations such as shearing.
+
+An 
