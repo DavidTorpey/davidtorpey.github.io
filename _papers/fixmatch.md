@@ -1,5 +1,6 @@
 ---
-name: FixMatch
+layout: paper
+title: FixMatch
 math: true
 mathjax: true
 ---
