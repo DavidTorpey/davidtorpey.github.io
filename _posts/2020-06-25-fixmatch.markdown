@@ -61,4 +61,4 @@ The key results from the paper can be seen in the above picture. It is also inte
 
 ## Important Considerations
 
-The paper notes that careful attention has to be given to various factors of the deep learning pipeline in label-sparse settings such as SSL. In particular, SSL methods are disproportionately affected by factors such as optimiser choice, learning rate schedule, and regularisation. The recommendations from the paper include using vanilla SGD with momentum instead of Adam, weight decay regularisation (parameter norm penalties), and a specific cosine-baed learning rate schedule.
+The paper notes that careful attention has to be given to various factors of the deep learning pipeline in label-sparse settings such as SSL. In particular, SSL methods are disproportionately affected by factors such as optimiser choice, learning rate schedule, and regularisation. The recommendations from the paper include using vanilla SGD with momentum instead of Adam, weight decay regularisation (parameter norm penalties), and a specific cosine-based learning rate schedule.
