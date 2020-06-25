@@ -7,7 +7,7 @@ mathjax: true
 tags: [semi-supervised learning, computer vision, deep learning]
 ---
 
-Labelled data is often either expensive or hard to obtain. As such, there has been a plethora of work to make better use of unlabelled data in machine learning, with paradigms such as unsupervised learning, semi-supervised learning, and more recently, self-supervised learning. [FixMatch](https://arxiv.org/pdf/2001.07685.pdf) is an approach to semi-supervised learning (SSL) that combines two common approaches of SSL: 1. consistency regularisation and pseudo-labelling.
+Labelled data is often either expensive or hard to obtain. As such, there has been a plethora of work to make better use of unlabelled data in machine learning, with paradigms such as unsupervised learning, semi-supervised learning, and more recently, self-supervised learning. [FixMatch](https://arxiv.org/pdf/2001.07685.pdf) is an approach to semi-supervised learning (SSL) that combines two common approaches of SSL: 1. consistency regularisation and 2. pseudo-labelling.
 
 ## Consistency Regularisation
 
@@ -25,7 +25,7 @@ The idea behind pseudo-labeling is to use the model itself to produce artificial
 
 The vanilla loss term when employing pseudo-labelling is given by:
 
-$$ \sum_i 1(\max(q_i) \ge \tau) H(\hat{q}_i, q_i) $$
+$$ \sum_i 1\{\max(q_i) \ge \tau\} H(\hat{q}_i, q_i) $$
 
 where $$ q_i = p(y_i \vert u_i) $$, $$ \hat{q}_i = \text{argmax}(q_i) $$ is a one-hot pseudo-label, $$ H $$ is cross-entropy, and $$ \tau $$ is a threshold parameter.
 
@@ -45,9 +45,9 @@ $$ l_s = \frac{1}{B} \sum_i H(p_i, p(y_i | \alpha(x_i))) $$
 
 where $$ B $$ is the number of the images in the batch, and $$ x_i $$ is the labelled example.
 
-The unsupervised term relies on a model-generated pseudo-label. To compute this one-hot label, we first compute the model's class distribution on weakly-augmented versions of the images: $$ q_i = p(y_i | \alpha(u_i)) $$. The pseudo-label is then given by: $$ \hat{q}_i = argmax(q_i) $$. The actual loss term is then standard cross-entropy using this pseudo-label as the ground truth vs. predictions on *strongly-augmented* versions of the images:
+The unsupervised term relies on a model-generated pseudo-label. To compute this one-hot label, we first compute the model's class distribution on weakly-augmented versions of the images: $$ q_i = p(y_i \vert \alpha(u_i)) $$. The pseudo-label is then given by: $$ \hat{q}_i = \text{argmax}(q_i) $$. The actual loss term is then standard cross-entropy using this pseudo-label as the ground truth vs. predictions on *strongly-augmented* versions of the images:
 
-$$ \frac{1}{\mu B} \sum_i 1(\max(q_i) \ge \tau) H(\hat{q}_i, p(y_i | A(u_i))) $$
+$$ \frac{1}{\mu B} \sum_i 1\{\max(q_i) \ge \tau\} H(\hat{q}_i, p(y_i \vert A(u_i))) $$
 
 where $$ \mu \in \mathbb{N} $$ (typically $$ \mu > 1 $$), and $$ \tau $$ denotes the threshold above which we will retain the generated pseudo-label.
 
