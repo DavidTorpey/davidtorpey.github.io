@@ -28,3 +28,4 @@ $$ \frac{\langle \mathbf{x}, \mathbf{n} \rangle - \langle \mathbf{p}, \mathbf{n}
 where $$ \mathbf{p} $$ is a point that lies on the hyperplane, and $$ \mathbf{n} $$ is the hyperplane's normal vector. This distance is visualised in the below figure.
 
 ![CH2](/assets/ch2.png)
+
