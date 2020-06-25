@@ -55,3 +55,10 @@ The full final loss function is then given by $$ l_s + \lambda_u l_u $$, where $
 
 ## Results
 
+![fixmatch2](/assets/fixmatch2.png)
+
+The key results from the paper can be seen in the above picture. It is also interesting to note that FixMatch manages to achieve $$ 78 $$% accuracy on CIFAR-10 with only **1** image per class.
+
+## Important Considerations
+
+The paper notes that careful attention has to be given to various factors of the deep learning pipeline in label-sparse settings such as SSL. In particular, SSL methods are disproportionately affected by factors such as optimiser choice, learning rate schedule, and regularisation. The recommendations from the paper include using vailla SGD with momentum instead of Adam, weight decay regularisation (parameter norm penalties), and a specific cosine-baed learning rate schedule.
