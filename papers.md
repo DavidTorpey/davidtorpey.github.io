@@ -5,4 +5,4 @@ permalink: /papers/
 ---
 
 Papers
-[Name of Link]({% link _papers/2020-06-25-fixmatch.markdown %})
+[Name of Link]({% link _papers/fixmatch.md %})
