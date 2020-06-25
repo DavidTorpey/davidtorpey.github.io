@@ -27,7 +27,7 @@ The vanilla loss term when employing pseudo-labelling is given by:
 
 $$ \sum_i 1(\max(q_i) \ge \tau) H(\hat{q}_i, q_i) $$
 
-where $$ q_i = p(y_i \vert u_i) $$
+where $$ q_i = p(y_i \vert u_i) $$, $$ \hat{q}_i = \text{argmax}(q_i) $$ is a one-hot pseudo-label, $$ H $$ is cross-entropy, and $$ \tau $$ is a threshold parameter.
 
 ## The Model
 
