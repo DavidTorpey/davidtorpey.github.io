@@ -31,6 +31,8 @@ plugins:
 
 collections:
   - papers
+include:
+  - _papers
 
 sass:
   sass_dir: css
