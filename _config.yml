@@ -29,11 +29,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-collections:
-  - papers
-include:
-  - _papers
-
 sass:
   sass_dir: css
   # Exclude from processing.
