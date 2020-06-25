@@ -20,7 +20,7 @@ Machine Learning Researcher, Software Developer and Computer Vision Enthusiast
         <div class="row">
             <div class="col-sm-12">
                 <a style="color:#000000" class="display-4 font-weight-bold" href="blog">
-                    Posts.
+                    Posts
                 </a>
                 <p class="lead font-weight-bold">
                 <span></span>
