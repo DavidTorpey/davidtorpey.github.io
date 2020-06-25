@@ -27,7 +27,7 @@ The vanilla loss term when employing pseudo-labelling is given by:
 
 $$ \sum_i 1(\max(q_i) \ge \tau) H(\hat{q}_i, q_i) $$
 
-where $$ q_i = p(y_i &#124; u_i) $$
+where $$ q_i = p(y_i \vert u_i) $$
 
 ## The Model
 
