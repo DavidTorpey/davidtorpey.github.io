@@ -5,4 +5,4 @@ permalink: /papers/
 ---
 
 Papers
-[Name of Link]({% post_url /_papers/fixmatch %})
+[Name of Link]({% post_url /_papers/2020-06-25-fixmatch %})
