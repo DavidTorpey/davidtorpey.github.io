@@ -45,7 +45,7 @@ $$ l_s = \frac{1}{B} \sum_i H(p_i, p(y_i | \alpha(x_i))) $$
 
 where $$ B $$ is the number of the images in the batch, and $$ x_i $$ is the labelled example.
 
-The unsupervised term relies on a model-generated pseudo-label. To compute this one-hot label, we first compute the model's class distribution on weakly-augmented versions of the images: $$ q_i = p(y_i | \alpha(u_i)) $$. The pseudo-label is then given by: $$ \hat{q}_i = \text{argmax}(q_i) $$. The actual loss term is then standard cross-entropy using this pseudo-label as the ground truth vs. predictions on *strongly-augmented* versions of the images:
+The unsupervised term relies on a model-generated pseudo-label. To compute this one-hot label, we first compute the model's class distribution on weakly-augmented versions of the images: $$ q_i = p(y_i | \alpha(u_i)) $$. The pseudo-label is then given by: $$ \hat{q}_i = `argmax`(q_i) $$. The actual loss term is then standard cross-entropy using this pseudo-label as the ground truth vs. predictions on *strongly-augmented* versions of the images:
 
 $$ \frac{1}{\mu B} \sum_i 1\{\max(q_i) \ge \tau\} H(\hat{q}_i, p(y_i | A(u_i))) $$
 
