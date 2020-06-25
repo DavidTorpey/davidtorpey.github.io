@@ -29,3 +29,6 @@ where $$ \mathbf{p} $$ is a point that lies on the hyperplane, and $$ \mathbf{n}
 
 ![CH2](/assets/ch2.png)
 
+The full algorithm is given below:
+
+![CH3](/assets/quickhull.png)
