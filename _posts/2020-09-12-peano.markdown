@@ -35,4 +35,20 @@ $$ x, y \in \mathbb{N} \wedge S(x) = S(y) \implies x=y $$
 
 Here we are essentially stating that our map $$ S $$ is injective.
 
+Axioms 1-4 allow us to define a concept of *next* or *successor* without ever explicitly imposing preconceived notions about numbers. Now, if we associate each value of our successor function $$ S $$ with some symbol, it starts looking a lot like the set of natural numbers has been constructed. For example, if we define $$ 0 := a $$, $$ 1 := S(a) $$, $$ 2 := S(S(a)) $$, this seems very similar to the natural numbers.
+
+However, we are not done. There is still a loophole that leads to a contradiction. Consider $$ e_1, e_2 \in \mathbb{N} $$, and that $$ S(e_1) = e_2 $$ and $$ S(e_1) = e_1 $$. This does not violate Axoims 1-4. This somehow allows for a set that seems bigger than $$ \mathbb{N} $$ since $$ e_1 $$ and $$ e_2 $$ are detached from every other element in $$ \mathbb{N} $$.
+
+## Axiom 5
+
+Suppose $$ \exists T \subset \mathbb{N} $$ such that:
+
+$$ a \in T \wedge $$
+
+and
+
+$$ x \in T \implies S(x) \in T $$
+
+The only such set $$ T $$ is $$ \mathbb{N} $$. This axiom circumvents the above-described loophole.
+
 Please not that this blog post is, in part, a summary of [this video](https://www.youtube.com/watch?v=3gBoP8jZ1Is).
