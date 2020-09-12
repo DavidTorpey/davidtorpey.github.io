@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "A Foundation of Mathematics - The Peano Axioms"
+date:   2020-09-12 21:55:55 +0200
+math: true
+mathjax: true
+tags: [mathematics, peano axoims]
+---
+
+In the past mathematicians wished to created a foundation for all of mathematics. The number system can be constructed hierarchically from the set of natural numbers $$ \mathbb{N} $$. From $$ \mathbb{N} $$, we can construct the integers $$ \mathbb{Z} $$, rationals $$ \mathbb{Q} $$, reals $$ \mathbb{R} $$, complex numbers $$ \mathbb{C} $$, and more. However, it is desirable to be able to construct the naturals ($$ \mathbb{N} $$) from more basic ingredients, since there is no reason $$ \mathbb{N} $$ should itself be fundamental.
+
+The Peano axioms (1889) are a set of axoims that allow for the construction of the natural numbers without ever referencing concepts such as arithmetic or counting. In this way, these axioms are fundamental.
+
+## Background Concepts
+
+One should be familiar with the concept of a set, and that two sets with the same elements means that they are the same set. Secondly, we define a binary operation $$ = $$, known commonly as equals, that is reflexive ($$ x=x $$), symmetric ($$ x=y \implies y=x $$), and transitive ($$ x=y \wedge y=z \implies x=z $$). These may seem obvious, however, they are key for the definition of what we consider *equality* to hold true. Lastly, we require that the set $$ \mathbb{N} $$ that we wish to construct with these axoims is closed under this $$ = $$ operation. Finally, we require the notion of a map / function. This is simply something that maps inputs to outputs.
+
+## Axoim 1
+
+$$ a \in \mathbb{N} $$
+
+This axiom essentially forces the set under construction to be nonempty: $$ \mathbb{N} \neq \emptyset $$. We state that there is some element $$ a $$ that is a member of our set.
+
+## Axoim 2
+
+$$ \exists S \ni x \in \mathbb{N} \implies S(x) \in \mathbb{N} $$
+
+## Axoim 3
+
+$$ \nexists x \in \mathbb{N} \ni S(x) = a $$
+
+## Axiom 4
+
+$$ x, y \in \mathbb{N} \wedge S(x) = S(y) \implies x=y $$
+
+Here we are essentially stating that our map $$ S $$ is injective.
+
+Please not that this blog post is, in part, a summary of [this video](https://www.youtube.com/watch?v=3gBoP8jZ1Is).
