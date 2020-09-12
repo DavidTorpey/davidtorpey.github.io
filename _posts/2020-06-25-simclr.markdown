@@ -23,7 +23,7 @@ Although $$ f $$ may initially seem unnecessary, it has been shown empirically t
 
 Since this is a *contrastive*, the loss function is defined in such a way that it contrasts negative pairs of examples from positive pairs of examples (i.e. $$ x_i $$ and $$ x_j $$ are a positive pair of examples). This loss function is known as normalised temperature-scaled cross entropy (NT-Xent), and is defined as:
 
-$$ l_{i,j} = -\text{log} \frac{\text{exp}(\text{sim}(z_i, z_j) / \tau)}{\sum_{k=1}^{2N} 1\{\k \neq i\} \text{exp}(\text{sim}(z_i, z_k) / \tau)} $$
+$$ l_{i,j} = -\text{log} \frac{\text{exp}(\text{sim}(z_i, z_j) / \tau)}{\sum_{k=1}^{2N} 1\{k \neq i\} \text{exp}(\text{sim}(z_i, z_k) / \tau)} $$
 
 where $$ \tau $$ is the temperature, $$ N $$ is the minibatch size, and $$ \text{sim} $$ is the cosine similarity. With this loss, all pairs of examples in a minibatch are treated as negative examples, except for the single pair $$ z_i, z_j $$. This loss function works well in practise, but typically requires very large batch sizes to be effective.
 
