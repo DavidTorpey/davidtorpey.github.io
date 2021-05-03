@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Interfacing C/C++ with Python (Part 1)"
+date:   2021-03-01 21:55:55 +0200
+math: true
+mathjax: true
+tags: [python, c, c++, ctypes, python3]
+---
+
+The purpose of this tutorial is to demonstrate how one can interface with C or
+C++ code using the `ctypes` standard library of Python. Some reasons you may one to do this include:
+
+1. Using a 3rd-party library or SDK that is implemented in C or C++.
+1. Speed or performance improves from implementing an algorithm or part of the system/program in C or C++.
+1. Easy way to extend Python code to C or C++.
+
