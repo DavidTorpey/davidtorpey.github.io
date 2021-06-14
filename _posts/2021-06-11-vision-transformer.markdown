@@ -38,9 +38,9 @@ architectures (see [this](https://arxiv.org/pdf/1711.07971.pdf),
 [this](https://arxiv.org/abs/2005.12872), and [this](https://arxiv.org/abs/1906.05909)).
 However, these previous attempts are notably more complex than the standard
 transformer, and thus cannot benefit from the vanilla formulation's computational
-efficiency and scalability - which will see is essentially for these non-CNN
-architecture to compete. Because of this, ViT aims to make as few modifications as
-possibility to ensure the maximum benefit in terms of scalability and
+efficiency and scalability - which will see is essential for these non-CNN
+architectures to compete. Because of this, ViT aims to make as few modifications as
+possibile to ensure the maximum benefit in terms of scalability and
 efficiency from the standard transformer can be realised.
 
 The architecture is fairly simple, and seems to be a natural way to model images using a
@@ -56,8 +56,8 @@ invariant, which is not ideal in this case. To overcome this, the authors assign
 (much like in NLP applications of transformers) positional embeddings to each of
 the patch embeddings to give the transformer context of patch ordering.
 
-After this point, it is a standard transformer model (i.e. the transformer encoder)
-from [the original transformer paper](https://arxiv.org/abs/1706.03762) the eventually
+After this point, it is a standard transformer model (i.e. the transformer encoder
+from [the original transformer paper](https://arxiv.org/abs/1706.03762)) that eventually
 maps to the class prediction. This is interesting as there is no convolution present
 in the architecture, thereby forgoing the strong inductive biases made by CNNs. The
 global approach to self-attention in ViT is a weaker prior than the strong locality
@@ -65,18 +65,18 @@ assumption made when performing convolution. The only time priors based on the 2
 structure of images is added into the modelling process of ViT is when higher
 resolution images are fed in. In this case, the effective sequence length is
 longer for the same patch size, at which point the positional embeddings may not
-be as meaningful as for shorter image patch sequence. Thus, 2D interpolation of
+be as meaningful as for shorter image patch sequences. Thus, 2D interpolation of
 the positional embeddings is performed, according to their location in the
 original image.
 
 The results of ViT are interesting. Due to the lack of strong, but beneficial
 inductive biases of CNNs, the ViT does not perform well when the amount of data
 is not large enough. Only when the scale of the data is, frankly, ridiculous (300M images),
-does the ViT standard outperforming ResNet-like architectures. At smaller scales, the
+does the ViT start outperforming ResNet-like architectures. At smaller scales, the
 ViT is not as competitive, but does take far fewer computational resources to train
 to achieve the same accuracy as the state-of-the-art CNNs.
 
-Interestly, even without the manual injection of image-specific prior, the ViT
+Interestly, even without the manual injection of image-specific priors, the ViT
 model still learns surprising things during training. For example, the linear
 projection (to embed the patches into the initial latent space), learns filters
 that are surprisingly similar to those usually learned by CNNs (see below).
