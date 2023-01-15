@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "On the Robustness of Self-Supervised Representations for Multi-view Object Classification"
-date:   2023-01-15 21:55:55 +0200
+date:   2023-01-15 15:55:55 +0200
 math: true
 mathjax: true
 tags: [ssl, self-supervised learning, representation learning]
