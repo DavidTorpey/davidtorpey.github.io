@@ -8,6 +8,10 @@ permalink: /research/
 
 Here is some of the formal research I have done or been part of **academically** (not in industry):
 
+## On the Robustness of Self-Supervised Representations for Multi-view Object Classification
+
+The Pattern Recognition Letters paper is available [here](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002276).
+
 ## SummaryNet: A Multi-Stage Deep Learning Model for Automatic Video Summarisation
 
 The arXiv pre-print is available [here](https://arxiv.org/pdf/2002.09424.pdf).
