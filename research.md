@@ -8,6 +8,10 @@ permalink: /research/
 
 Here is some of the formal research I have done or been part of **academically** (not in industry):
 
+## MiDaS: A large-scale Minecraft dataset for non-natural image benchmarking
+
+The Journal of Electronic Imaging paper is available [here](https://opticalengineering.spiedigitallibrary.org/journals/journal-of-electronic-imaging/volume-33/issue-01/013035/MiDaS--a-large-scale-Minecraft-dataset-for-non-natural/10.1117/1.JEI.33.1.013035.short#_=_).
+
 ## On the Robustness of Self-Supervised Representations for Multi-view Object Classification
 
 The Pattern Recognition Letters paper is available [here](https://www.sciencedirect.com/science/article/abs/pii/S0167865522002276).

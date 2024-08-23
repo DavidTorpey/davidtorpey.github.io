@@ -12,5 +12,3 @@ Research Interests:
 - Representation learning
 - Unsupervised learning
 - Semi-supervised learning
-
-You can find my CV [here](https://docs.google.com/document/d/12jrumn2vpa4EEagT-buqYR-wsSQfwfhCsuStnbJtgwA/edit?usp=sharing).
